@@ -1,0 +1,634 @@
+/* 🌟 Estilos Exclusivos para el Index */
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(to bottom, #1E1E1E, #0F0F0F);
+    text-align: center;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid #2C2C2C;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1rem;
+    color: #BDBDBD;
+}
+
+/* Servicios Section */
+.services-index {
+    background: #0F0F0F;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.services-index h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #FFFFFF;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.services-grid .service-card {
+    background: #1C1C1C;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease;
+}
+
+.services-grid .service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.4);
+}
+
+.services-grid .service-card h3 {
+    color: #FFFFFF;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+.services-grid .service-card p {
+    color: #BDBDBD;
+    font-size: 0.9rem;
+}
+
+/* 🌟 Galería de Trabajos */
+.galeria-index {
+    text-align: center;
+    padding: 40px 20px;
+    background: #121212; /* Fondo oscuro para cohesión */
+}
+
+.galeria-index h2 {
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+.gallery-index {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.gallery-item {
+    background: #1C1C1C;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+    text-align: center;
+    max-width: 350px;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.gallery-item p {
+    padding: 10px;
+    font-size: 0.9rem;
+    color: #E0E0E0;
+    background: #1C1C1C;
+}
+
+.gallery-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+}
+
+
+/* Contacto */
+.contacto-index {
+    background: #0F0F0F;
+    text-align: center;
+    padding: 40px 20px;
+    border-top: 1px solid #2C2C2C;
+}
+
+.contacto-index h2 {
+    font-size: 2rem;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+
+.contacto-index .contact-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.contacto-index .btn-whatsapp,
+.contacto-index .btn-call {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #FFFFFF;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: transform 0.2s;
+}
+
+.contacto-index .btn-whatsapp {
+    background-color: #25D366;
+}
+
+.contacto-index .btn-call {
+    background-color: #1E90FF;
+}
+
+.contacto-index .btn-whatsapp:hover,
+.contacto-index .btn-call:hover {
+    transform: scale(1.1);
+}
+
+/* 🌟 Footer Redes Sociales */
+.footer {
+    background-color: #121212;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 0.9rem;
+    margin-top: 40px;
+    border-top: 1px solid #2C2C2C;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.social-icons a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: #1C1C1C;
+    color: #FFFFFF;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    text-decoration: none;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.social-icons a:hover {
+    background: #00ADB5;
+    transform: scale(1.1);
+}
+
+/* Iconos específicos */
+.social-icons a i {
+    font-size: 1.5rem;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    background: #1C1C1C; /* Gris oscuro elegante */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid #2C2C2C;
+}
+
+.navbar .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+.navbar nav a {
+    color: #E0E0E0;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: 400;
+    transition: color 0.3s ease;
+}
+
+.navbar nav a:hover {
+    color: #A0A0A0; /* Gris más claro para el hover */
+    text-decoration: underline;
+}
+
+/* 🌟 Sección de Calidad y Compromiso */
+.quality-index {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    background: #1A1A1A; /* Fondo oscuro */
+    padding: 60px 20px;
+    border-bottom: 1px solid #2C2C2C;
+    text-align: center;
+}
+
+.quality-content {
+    max-width: 50%;
+    text-align: left;
+}
+
+.quality-content h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #FFFFFF;
+}
+
+.quality-content p {
+    font-size: 1rem;
+    color: #CCCCCC;
+    line-height: 1.6;
+}
+
+.quality-image {
+    max-width: 40%;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.quality-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+/* Servicios Grid */
+.services-index {
+    padding: 60px 20px;
+    background: #0F0F0F;
+    text-align: center;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.service-card {
+    background: #1E1E1E;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+.service-card h3 {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    color: #FFFFFF;
+}
+
+.service-card p {
+    font-size: 0.9rem;
+    color: #BDBDBD;
+}
+
+/* 🌟 Transiciones Globales */
+body {
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* 🌟 Calidad y Compromiso */
+.quality-index {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    background: #1A1A1A; 
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.quality-content {
+    max-width: 50%;
+    text-align: left;
+}
+
+.quality-content h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #FFFFFF;
+    margin-bottom: 15px;
+}
+
+.quality-content p {
+    font-size: 1rem;
+    color: #CCCCCC;
+    line-height: 1.6;
+}
+
+.quality-image {
+    max-width: 40%;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.quality-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+/* 🌟 Sección de Contacto */
+.contacto-index {
+    text-align: center;
+    padding: 50px 20px;
+    background: #121212;
+    border-top: 1px solid #2C2C2C;
+}
+
+.contacto-index h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+}
+
+.contacto-index p {
+    color: #CCCCCC;
+    margin-bottom: 20px;
+}
+
+.contact-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.btn-whatsapp,
+.btn-call {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: transform 0.2s;
+    text-align: center;
+}
+
+.btn-whatsapp {
+    background-color: #25D366;
+}
+
+.btn-call {
+    background-color: #1E90FF;
+}
+
+.btn-whatsapp:hover,
+.btn-call:hover {
+    transform: scale(1.1);
+}
+
+/* 🌟 Footer Redes Sociales */
+.footer {
+    background-color: #121212;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 0.9rem;
+    margin-top: 40px;
+    border-top: 1px solid #2C2C2C;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.social-icons a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: #1C1C1C;
+    color: #FFFFFF;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    text-decoration: none;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.social-icons a:hover {
+    background: #00ADB5;
+    transform: scale(1.1);
+}
+
+/* Iconos específicos */
+.social-icons a i {
+    font-size: 1.5rem;
+}
+
+
+/* 🌟 Ajustes Generales para Fondo Completo */
+body, html {
+    margin: 0;
+    padding: 0;
+    background-color: #0F0F0F; /* Fondo uniforme negro */
+    overflow-x: hidden; /* Evita desplazamiento horizontal */
+}
+
+/* 🌟 Ajustes en las Secciones */
+section {
+    margin: 0;
+    padding: 0;
+    border: none; /* Elimina bordes no deseados */
+}
+
+/* 🌟 Footer Redes Sociales */
+.footer {
+    background-color: #121212;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 0.9rem;
+    margin-top: 40px;
+    border-top: 1px solid #2C2C2C;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.social-icons a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: #1C1C1C;
+    color: #FFFFFF;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    text-decoration: none;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.social-icons a:hover {
+    background: #00ADB5;
+    transform: scale(1.1);
+}
+
+/* Iconos específicos */
+.social-icons a i {
+    font-size: 1.5rem;
+}
+
+
+/* 🌟 Contenedor de Contacto */
+.contacto-index {
+    margin: 0;
+    padding: 50px 20px;
+    background: #121212; /* Ajuste para fondo sólido */
+    border-top: 1px solid #2C2C2C;
+}
+
+/* 🌟 Evitar Espacios Inesperados */
+* {
+    box-sizing: border-box;
+}
+
+/* 🍔 Estilos para el menú hamburguesa */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 25px;
+    cursor: pointer;
+}
+
+.hamburger span {
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: #E0E0E0;
+    border-radius: 2px;
+    transition: all 0.3s ease-in-out;
+}
+
+/* 📱 Responsive - Móviles */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background: #1C1C1C;
+        text-align: center;
+        z-index: 1000;
+        border-top: 1px solid #2C2C2C;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links a {
+        padding: 15px 0;
+        font-size: 1.2rem;
+        color: #E0E0E0;
+        text-decoration: none;
+        border-bottom: 1px solid #2C2C2C;
+    }
+
+    .nav-links a:hover {
+        background: #2C2C2C;
+        color: #FFFFFF;
+    }
+
+    .hamburger {
+        display: flex;
+        z-index: 1100;
+    }
+
+    /* 🪄 Animación del icono */
+    .hamburger.active span:nth-child(1) {
+        transform: translateY(10px) rotate(45deg);
+    }
+
+    .hamburger.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active span:nth-child(3) {
+        transform: translateY(-10px) rotate(-45deg);
+    }
+}

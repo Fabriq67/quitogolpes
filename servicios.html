@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios - QuitoGolpes</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<script>
+    // 🌟 Efecto de transición entre páginas
+    document.addEventListener('DOMContentLoaded', () => {
+        const links = document.querySelectorAll('a');
+        links.forEach(link => {
+            link.addEventListener('click', (e) => {
+                const href = link.getAttribute('href');
+                if (href && !href.startsWith('#') && !link.target) {
+                    e.preventDefault();
+                    document.body.style.opacity = '0';
+                    setTimeout(() => {
+                        window.location.href = href;
+                    }, 300); // Tiempo de la transición
+                }
+            });
+        });
+    });
+</script>
+
+
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">QuitoGolpes</div>
+            <nav class="nav-links" id="nav-links">
+                <a href="index.html">Inicio</a>
+                <a href="servicios.html">Servicios</a>
+                <a href="galeria.html">Antes y Después</a>
+                <a href="contacto.html">Contáctanos</a>
+            </nav>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+    
+    
+
+
+   <!-- 🔧 Sección de Servicios Actualizada -->
+<section class="servicios">
+    <h2>🔧 Nuestros Servicios</h2>
+    <div class="services-container">
+        <div class="service-card">
+            <img src="icons/headlight.png" alt="Restauración de Faros" class="service-icon">
+            <h3>Restauración de Faros</h3>
+            <p>Pulido y nano cristalino para recuperar la vida de los faros de tu vehículo.</p>
+        </div>
+        <div class="service-card">
+            <img src="icons/body.png" alt="Enderezada 3D Sin Masilla" class="service-icon">
+            <h3>Enderezada 3D Sin Masilla</h3>
+            <p>Técnica avanzada para reparar sin necesidad de masilla.</p>
+        </div>
+        <div class="service-card">
+            <img src="icons/maintenance.png" alt="Reparaciones Express" class="service-icon">
+            <h3>Reparaciones Express</h3>
+            <p>Soluciones rápidas para daños menores.</p>
+        </div>
+        <div class="service-card">
+            <img src="icons/car.png" alt="Restauración de Autos Clásicos" class="service-icon">
+            <h3>Restauración de Autos Clásicos</h3>
+            <p>Devolvemos la vida a los autos clásicos con detalles únicos.</p>
+        </div>
+        <div class="service-card">
+            <img src="icons/car-polish.png" alt="Pulida Total de Carrocería" class="service-icon">
+            <h3>Pulida Total de Carrocería</h3>
+            <p>Eliminación de daños menores y brillo extremo.</p>
+        </div>
+        <div class="service-card">
+            <img src="icons/spray-gun.png" alt="Extracción Sin Repintar" class="service-icon">
+            <h3>Extracción Sin Repintar</h3>
+            <p>Conserva la pintura original del vehículo.</p>
+        </div>
+    </div>
+</section>
+
+
+    <!-- 📝 Descripción Emergente -->
+    <div id="service-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeDescription()">&times;</span>
+            <h3 id="service-title"></h3>
+            <p id="service-description"></p>
+        </div>
+    </div>
+    <!-- 🌟 Footer -->
+<footer class="footer">
+    <div class="footer-content">
+        <p>© 2024 QuitoGolpes.ec - Todos los derechos reservados.</p>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/elreydelgolpe.ec" target="_blank" aria-label="Facebook">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://www.instagram.com/quitogolpes?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" aria-label="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+        </div>
+    </div>
+</footer>
+
+    
+</body>
+</html>

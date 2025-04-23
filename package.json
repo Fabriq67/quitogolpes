@@ -1,0 +1,15 @@
+{
+  "name": "quitogolpes",
+  "version": "1.0.0",
+  "description": "Sitio web para QuitoGolpes - Taller de reparación de autos",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": ["taller", "reparación", "autos", "Quito"],
+  "author": "Tu Nombre",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}
