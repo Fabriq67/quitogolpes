@@ -84,3 +84,20 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 });
+
+// 🌟 Transición suave entre páginas
+document.addEventListener('DOMContentLoaded', () => {
+    const links = document.querySelectorAll('a');
+    links.forEach(link => {
+        link.addEventListener('click', (e) => {
+            const href = link.getAttribute('href');
+            if (href && !href.startsWith('#') && !link.target) {
+                e.preventDefault();
+                document.body.style.opacity = '0';
+                setTimeout(() => {
+                    window.location.href = href;
+                }, 300); // Tiempo de la transición
+            }
+        });
+    });
+});
